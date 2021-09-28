@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="discription" content="a contact page for travel blog website, word travel | Contact">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point&display=swap" rel="stylesheet"> 
+    <title>Word Travel | Contact</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><img src="/images/logo1.jpg" alt=" word travel website logo"></a>
+        <label for="humburger-menu"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="humburger-menu">
+        <nav>
+            <ul>
+                <li><a href="index.html" > Home </a></li>
+                <li><a href="blog.html" > Blog </a></li>
+                <li><a href="about.html"> About </a></li>
+                <li><a href="contact.html" class="active"> Contact</a></li>
+            </ul>
+            <div class="search-point">
+                <i class="fas fa-search"></i>
+                <input type="search" id="search" placeholder="search">
+            </div> 
+        </nav>
+    </header>
+    <main class="contact">
+      <section class="contact00">
+        <h2>Contact</h2>
+        <br>
+        <h3>Contact Me Here</h3>
+        <b><p>wt@email.com</p></b>
+        <br>
+        <h4>Or Just Dropp a Message Here</h4>
+      </section>
+      <section class="contact-form">
+        <form action="" method="POST" id="contactForm">
+          <div class="contact-form01">
+            <div class="name">
+              <label for="firstname"> First Name</label>
+              <input type="text" id="fname" name=" first name" placeholder="type first name">
+              <div class="errorForm fNameError">First Name must be more then 5 characters</div>
+            </div>
+            <div class="name">
+              <label for="lastname">Last Name</label>
+              <input type="text" id="lname" name="last name" placeholder="type last name">
+              <div class="errorForm lNameError">Last Name must be more then 5 characters</div>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="type email">
+              <div class="errorForm emailError">Please enter a valid email</div>
+            </div>
+            <div>
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="type subject">
+              <div class="errorForm subjectError">Subject must be more then 15 characters</div>
+            </div>
+            <div>
+              <label for="textarea">Message</label>
+              <textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="type message"></textarea>
+              <div class="errorForm messageError">Message must be more then 25 characters</div>
+            </div>
+            <button class="Submit">Submit</button>
+          </div>
+
+        </form>
+      </section>
+    </main>
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer--wrapper footer--wrapper1">
+                <a href="index.html" class="logo-footer"><img src="/images/logo1.jpg" alt=" word travel website logo"></a>
+            </div>
+            <div class="footer--wrapper footer--wrapper2">
+                <p>
+                    Subscribe Here To Get The best Travel
+                    Tips And Insider Secrets
+                </p>
+                <input type="email" class="subscribe-email" placeholder="Email">
+                <br>
+                <button class="Subscribe-btn">Subscribe</button>
+                <span class="sosial-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fas fa-play-circle"></i>   
+                </span>
+                 
+                <p class="footer-under-text">&copy;2022 Word Travel</p>
+            </div>
+        </div>
+    </footer>
+    <script src="/JS/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+
+
+
+
+.about-container{
+  margin-top: 120px;
+}
+
+h1,h2{
+  text-align: center;
+  color: var(--primary-color);
+}
+
+
+.wellcome-picures-about,.wellcome-about{
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.wellcome-picures--about{
+  width: 300px;
+  height: 300px;
+ 
+}
+.about-info{
+  margin-top: 50px;
+}
+.wellcome--about {
+  width: 250px;
+  height: 250px;
+ 
+}
+.wellcome--about1 img{
+  width: 250px;
+  height: 250px;
+}
+
+
+
+
+

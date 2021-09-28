@@ -1,0 +1,41 @@
+
+
+
+.specific-container{
+  margin-top: 100px;
+}
+
+.specific {
+  width: 50%;
+  margin: 0 auto;
+  height: 300px;
+  border: 2px solid #3c463e;
+  
+}
+
+.blog--specific-image {
+  width: 300px;
+  height: 300px;
+}
+
+.featuredmedia-specific-text{
+  position: relative;
+  top: 7px;
+}
+
+h4{
+  background: var(--primary-background);
+  position: relative;
+  bottom: 86px;
+  padding: 4px;
+  width: 210px;
+  text-align: center;
+  margin-left: 40px;
+  opacity: 0.8;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 15.8rem;
+}
