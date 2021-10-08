@@ -47,10 +47,9 @@
 /* slidershow */
 
 .gallery-container {
-  margin-top: 39rem;
   overflow: hidden;
-  margin: 0 auto;
-  width: 1150px;
+  margin: 34rem auto 0;
+  width: 250px;
 }
 .galleryshow {
   display: flex;

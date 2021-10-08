@@ -1,6 +1,6 @@
 @media only screen and (min-width: 638px) {
   .gallery-container {
-    margin-top: 18rem;
+    margin-top: 14rem;
   }
 }
 
@@ -31,7 +31,7 @@
   }
 
   li a {
-    color: var( --primary-color);
+    color: var(--primary-color);
     background: var(--secondary-color);
     margin: 5px 10px;
     border-radius: 50px;
@@ -41,11 +41,10 @@
   header label {
     display: none;
   }
- 
+
   .search-point {
     left: 0rem;
     position: relative;
-    
   }
   .fa-search {
     top: 38px;
@@ -89,7 +88,9 @@
     width: 563px;
   }
 
-  
+  .gallery-container {
+    width: 550px;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -100,5 +101,15 @@
   .search-point {
     left: 2rem;
     position: relative;
+  }
+
+  .gallery-container {
+    width: 850px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .gallery-container {
+    width: 1150px;
   }
 }
