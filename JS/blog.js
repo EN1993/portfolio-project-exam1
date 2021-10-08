@@ -1,29 +1,25 @@
-const baseUrl ='' ;
-const blogContainer = document.querySelector(".blog");
+const baseUrl ='https://pe.enlive.one/wp-json/wp/v2/posts?_embed';
+const blogPostContainer = document.querySelector(".blog-post");
 
-async function getBlog(url) {
+async function blogPost(url) {
   const response = await fetch(url);
-  const blog = await response.json();
-
-  for (let i = 0; i < blog.length; i++) {
-
-    if (i===3) {
-      break;
+  const posts = await response.json();
+  console.log(posts);
+  
+    for (let i = 0; i < posts.length; i++) {
+  
+      blogPostContainer.innerHTML += `
+       <div class='post-container'>
+          <div class='blog--posts-image 'style="background-image:url('${posts[i]._embedded["wp:featuredmedia"]["0"].source_url}')"></div>
+          <span class='text'><h3>${posts[i]._embedded["wp:featuredmedia"]["0"].title.rendered}</h3></span>
+          <span class=''><p>${posts[i]._embedded["wp:featuredmedia"]["0"].caption.rendered}</p></span>
+        </div>
+            `
     }
-    
-    blogContainer.innerHTML += `
-    <a href="specific.html?id=${blog[i].id}">
-      <div >
-        <div class='blog--posts-image'style="background-image:url('${blog[i]._embedded["wp:featuredmedia"]["0"].source_url}')"></div>
-        <span class='featuredmedia-text'><h4>${blog[i]._embedded["wp:featuredmedia"]["0"].title.rendered}</h4></span>
-        
-      </div>
-    </a>  `
-  }
+
   
 }
-getBlog(baseUrl);
-
+blogPost(baseUrl);
 
 
 const viewMoreTitle = document.querySelector(".blog-post-specific-title");

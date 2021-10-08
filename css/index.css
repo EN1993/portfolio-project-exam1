@@ -1,4 +1,3 @@
-
 .welcome-page {
   padding: 0px 10px;
 }
@@ -6,7 +5,7 @@
 .welcome-page01 {
   width: 100%;
   height: 500px;
-  border: 1px solid #FFAF0C;
+  border: 1px solid #ffaf0c;
   background-image: url(/images/home/kiting.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -44,26 +43,24 @@
   background: var(--primary-background);
 }
 
-
 /* latest posts*/
 /* slidershow */
 
 .gallery-container {
   margin-top: 39rem;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 1150px;
 }
 .galleryshow {
-  max-width: 1300px;
-  position: relative;
-  margin: auto;
-}
-.gallery {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
+  position: relative;
+  top: 0;
+  left: 0;
 }
-.two{
-  display: none;
+.item {
+  width: 300px;
+  flex-shrink: 0;
 }
 
 .prev,
@@ -73,13 +70,16 @@
   top: 50%;
   width: auto;
   padding: 14px;
-  margin-top: -31px;
+  margin-top: -63px;
   font-size: 19px;
   transition: 0.5s all;
   font-weight: bold;
   background: var(--primary-background);
   color: var(--secondary-color);
   border: none;
+}
+.prev {
+  left: 0;
 }
 
 .next {
@@ -89,30 +89,23 @@
 .next:hover {
   background: var(--secondary-background);
 }
-figcaption {
+.text h3 {
   color: var(--secondary-color);
   background: var(--primary-background);
   text-align: center;
   padding: 1px;
-  width: 235px;
+  width: 165px;
   position: relative;
   bottom: 4.5rem;
-  margin-left: 32px;
+  margin-left: 40px;
   opacity: 0.9;
   font-weight: bold;
   height: 40px;
 }
 
-figcaption p {
-  font-size: 25px;
-  position: relative;
-  bottom: 19px;
-}
-
 .gallery-picture {
-  height: 300px;
-  width: 300px;
-  margin: 10px;
+  height: 250px;
+  width: 250px;
 }
 
 /* featured blog*/
