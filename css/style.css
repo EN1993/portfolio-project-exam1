@@ -5,7 +5,7 @@ body {
 }
 
 :root{
-  --primary-color:#00BD13;
+  --primary-color:#00770C;
 }
 
 :root{
@@ -13,11 +13,11 @@ body {
 }
 
 :root{
-  --secondary-background:#00BD13;
+  --secondary-background:#00770C;
 }
 
 :root{
-  --primary-background:#FFAF0C;
+  --primary-background:#4B3302;
 }
 
 /* Header section */
@@ -80,7 +80,7 @@ li a {
 #search {
   width: 130px;
   border: none;
-  border-bottom: 2px solid #00BD13;
+  border-bottom: 2px solid #00770C;
   background: var(--primary-background);
   color: var(--secondary-color);
 }
