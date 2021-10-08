@@ -6,33 +6,37 @@ async function blogPost(url) {
   const posts = await response.json();
   console.log(posts);
   
-    for (let i = 0; i < posts.length; i++) {
-  
-      blogPostContainer.innerHTML += `
+   posts.forEach(post => {
+     
+    blogPostContainer.innerHTML += `
+    <a href="specific.html?id=${post.id}">
+      
        <div class='post-container'>
-          <div class='blog--posts-image 'style="background-image:url('${posts[i]._embedded["wp:featuredmedia"]["0"].source_url}')"></div>
-          <span class='text'><h3>${posts[i]._embedded["wp:featuredmedia"]["0"].title.rendered}</h3></span>
-          <span class=''><p>${posts[i]._embedded["wp:featuredmedia"]["0"].caption.rendered}</p></span>
+          <div class='blog--posts-image 'style="background-image:url('${post._embedded["wp:featuredmedia"]["0"].source_url}')"></div>
+          <span class='text'><h3>${post._embedded["wp:featuredmedia"]["0"].title.rendered}</h3></span>
+          <span class=''><p>${post._embedded["wp:featuredmedia"]["0"].caption.rendered}</p></span>
         </div>
-            `
-    }
+      </a>     
+    
+       `
 
   
+  
+  }); 
+   
 }
 blogPost(baseUrl);
 
 
-const viewMoreTitle = document.querySelector(".blog-post-specific-title");
+// const viewMoreTitle = document.querySelector(".blog-post-specific-title");
 
-const viewMoreContainer = document.querySelector(".blog-post-specific");
+// const viewMoreContainer = document.querySelector(".blog-post-specific");
 
-const viewMoreButton = document.querySelector(".view-more");
+// const viewMoreButton = document.querySelector(".view-more");
 
-function viewMoreSection() {
-  viewMoreTitle.style.display ="flex";
-  viewMoreContainer.style.display ="flex";
-}
+// function viewMoreSection() {
+//   viewMoreTitle.style.display ="flex";
+//   viewMoreContainer.style.display ="flex";
+// }
 
-viewMoreButton.onclick = viewMoreSection;
-
-
+// viewMoreButton.onclick = viewMoreSection;
