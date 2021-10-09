@@ -1,21 +1,23 @@
-
-
-
-.specific-container{
+.specific-container {
   margin-top: 100px;
 }
-
-.specific {
-  width: 50%;
-  margin: 0 auto;
-  height: 300px;
-  border: 2px solid #3c463e;
-  
+.specific-post {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 25px auto;
+  justify-content: center;
+  width: 300px;
 }
 
 .specific-image {
   width: 300px;
   height: 300px;
+}
+
+h1,
+h3 {
+  text-align: center;
+  color: var(--primary-color);
 }
 
 /* .featuredmedia-specific-text{

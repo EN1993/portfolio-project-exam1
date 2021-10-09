@@ -1,11 +1,11 @@
-h1{
+h1 {
   text-align: center;
 }
-.blog-post-container{
+.blog-post-container {
   margin-top: 120px;
 }
 
-.blog-post{
+.blog-post {
   max-width: 300px;
   display: grid;
   grid-template-columns: 1fr;
@@ -18,7 +18,17 @@ h1{
   height: 300px;
 }
 
-.view-more {
+.blog-title {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.blog-text {
+  text-decoration: none;
+  color: black;
+}
+
+/* .view-more {
   background: var(--secondary-background);
   color: var(--secondary-color);
   padding: 12px 27px;
@@ -74,4 +84,4 @@ h1{
 .featuredmedia-text {
   position: relative;
   top: 7px;
-}
+} */

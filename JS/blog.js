@@ -13,8 +13,9 @@ async function blogPost(url) {
       
        <div class='post-container'>
           <div class='blog--posts-image 'style="background-image:url('${post._embedded["wp:featuredmedia"]["0"].source_url}')"></div>
-          <span class='text'><h3>${post._embedded["wp:featuredmedia"]["0"].title.rendered}</h3></span>
-          <span class=''><p>${post._embedded["wp:featuredmedia"]["0"].caption.rendered}</p></span>
+          <span class='blog-title'><h3>${post._embedded["wp:featuredmedia"]["0"].title.rendered}</h3></span>
+          <span class='blog-text'><p>${post._embedded["wp:featuredmedia"]["0"].caption.rendered}</p></span>
+          
         </div>
       </a>     
     

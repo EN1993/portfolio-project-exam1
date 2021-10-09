@@ -10,11 +10,13 @@ async function latestPost(url) {
     for (let i = 0; i < posts.length; i++) {
   
       latestPostContainer.innerHTML += `
+
+      <a href="specific.html?id=${posts[i].id}">
        <div class='item'>
           <div class='gallery-picture'style="background-image:url('${posts[i]._embedded["wp:featuredmedia"]["0"].source_url}')"></div>
           <span class='text'><h3>${posts[i]._embedded["wp:featuredmedia"]["0"].title.rendered}</h3></span>
         </div>
-            `
+       </a>     `
     }
 
   
@@ -27,11 +29,13 @@ const galleryshow = document.querySelector(".galleryshow ");
 
 let leftPositioning = 0;
 right.onclick = function () {
+  console.log("right clicked");
   leftPositioning -= 300;
   galleryshow.style.left = `${leftPositioning}px`;
 }
 
 left.onclick =function () {
+  console.log("left clicked");
   leftPositioning += 300;
   galleryshow.style.left = `${leftPositioning}px`;
 }
