@@ -66,10 +66,10 @@
 .next {
   cursor: pointer;
   position: absolute;
-  top: 161%;
+  top: 167%;
   width: auto;
   padding: 14px;
-  margin: -22px 60px 0px;
+  margin: -22px 12px 0px;
   font-size: 19px;
   transition: 0.5s all;
   font-weight: bold;
