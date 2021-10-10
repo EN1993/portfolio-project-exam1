@@ -7,7 +7,7 @@
   }
   .prev,
   .next {
-    top: 127%;
+    top: 99%;
   }
 }
 
@@ -106,7 +106,7 @@
   }
   .prev,
   .next {
-    top: 130%;
+    top:100%;
   }
 }
 
@@ -125,7 +125,7 @@
   }
   .prev,
   .next {
-    top: 130%;
+    top: 100%;
   }
 }
 
@@ -136,8 +136,8 @@
 
   .prev,
   .next {
-    top: 135%;
-    margin: -62px 11rem;
+    top: 105%;
+    margin: -62px 4rem;
   }
 }
 
